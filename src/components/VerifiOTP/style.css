@@ -1,0 +1,12 @@
+.otpInput {
+    margin: 0 10px;
+}
+
+.otpInput>input {
+    width: 90% !important;
+    border: none;
+    border-bottom: 1px solid #7B7887;
+    height: 40px;
+    font-size: 22px;
+    outline: 0;
+}

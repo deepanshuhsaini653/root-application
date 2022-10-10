@@ -1,1 +1,1 @@
-export * from "./LoginViaPassword";
+export * from './LoginViaPassword';
