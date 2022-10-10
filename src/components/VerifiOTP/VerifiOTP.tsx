@@ -65,7 +65,7 @@ export const VerifiOTP: FC<IVerifyOTPProps> = (props): JSX.Element => {
         )}
       </Box>
       <Grid container>
-        <Grid item xs={12} lg={12} pb={10}>
+        <Grid item xs={12} lg={12} pb={6}>
           <Box sx={{ width: "60%", margin: "0 auto" }}>
             <OtpInput
               isInputNum={isInputNum}
