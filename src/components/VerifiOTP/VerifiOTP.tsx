@@ -1,9 +1,7 @@
 import React, { FC, useState } from "react";
 import { Typography, Box, Grid, Button } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
-import OtpInput from "react-otp-input";
-import "./style.css";
-
+import { OtpInput } from "react-mat-otp-input";
 export interface IVerifyOTPProps {
   buttonConfig?: any;
   loader?: boolean;
@@ -65,15 +63,15 @@ export const VerifiOTP: FC<IVerifyOTPProps> = (props): JSX.Element => {
         )}
       </Box>
       <Grid container>
-        <Grid item xs={12} lg={12} pb={6}>
-          <Box sx={{ width: "60%", margin: "0 auto" }}>
+        <Grid item xs={12} lg={12} pb={4}>
+          <Box sx={{ textAlign: "center" }}>
             <OtpInput
-              isInputNum={isInputNum}
-              className="otpInput"
-              value={otp}
-              onChange={otpChangeHandler}
-              numInputs={numInputs}
-              separator={<span></span>}
+              autoFocus
+              isNumberInput={isInputNum}
+              length={numInputs}
+              className="otpContainer"
+              inputClassName="otpInput"
+              onChangeOTP={otpChangeHandler}
             />
             <Box sx={{ textAlign: "right", paddingTop: ".8rem" }}>
               {counter === 0 && (
@@ -99,7 +97,6 @@ export const VerifiOTP: FC<IVerifyOTPProps> = (props): JSX.Element => {
             </Box>
           </Box>
         </Grid>
-
         <Grid item xs={12}>
           <LoadingButton
             type="submit"

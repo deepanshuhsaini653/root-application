@@ -37,8 +37,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-.MuiFormHelperText-root {
-  margin-left: 0 !important;
-}

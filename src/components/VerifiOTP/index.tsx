@@ -1,1 +1,1 @@
-export * from "./VerifiOTP";
+export * from './VerifiOTP';
